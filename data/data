@@ -1,0 +1,1 @@
+We can pass data around components by using the props parameter/object and by destructuring each data as parameters 
