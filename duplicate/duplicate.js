@@ -4,13 +4,12 @@ const findDuplicate = () => {
 
     for(el of elements) {
         let elIndex = elements.indexOf(el)
-        
+        for(let i=0; i<elements.length; i++) {
+            
+        }
 
     }
-    elements.forEach((el) => {
-        const dup = elements.find((e) => e === el)
-        console.log(dup)
-    })
+   
 }
 
 findDuplicate()
