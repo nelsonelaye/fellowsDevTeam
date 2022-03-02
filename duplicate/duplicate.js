@@ -4,7 +4,7 @@
 
 const elements = ["a", "b", 1, 6, "a", 6, "c"]
 
-const findDuplicate = () => {
+const removeDuplicate = () => {
 
     for(el of elements) {
        let findDuplicate = elements.filter((e) => e === el)
@@ -20,5 +20,5 @@ const findDuplicate = () => {
     console.log(elements)
 }
 
-findDuplicate()
+removeDuplicate()
 
