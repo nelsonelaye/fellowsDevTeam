@@ -7,13 +7,13 @@ const elements = ["a", "b", 1, 6, "a", 6, "c"]
 const findDuplicate = () => {
 
     for(el of elements) {
-       let dup = elements.filter((e) => e === el)
-        console.log(dup)
+       let findDuplicate = elements.filter((e) => e === el)
+        console.log(findDuplicate)
 
-        if(dup.length > 1) {
-            let newEl = dup[0]
-            let dupIndex = elements.lastIndexOf(newEl)
-            elements.splice(dupIndex, 1)
+        if(findDuplicate.length > 1) {
+            let elementWithDuplicate = findDuplicate[0]
+            let duplicateIndex = elements.lastIndexOf(elementWithDuplicate)
+            elements.splice(duplicateIndex, 1)
         }
     }
 
