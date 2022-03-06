@@ -2,7 +2,7 @@
 //find if there exist more than one of that element
 //if true, remove one else 
 
-const elements = ["a", "b", 1, 6, "a", 6, "c"]
+const elements = ["a", "b", 1, 6, "a", 6, "c", 6, 6, 6, 6]
 
 const removeDuplicate = () => {
 
@@ -13,7 +13,14 @@ const removeDuplicate = () => {
         if(findDuplicate.length > 1) {
             let elementWithDuplicate = findDuplicate[0]
             let duplicateIndex = elements.lastIndexOf(elementWithDuplicate)
-            elements.splice(duplicateIndex, 1)
+
+            for(let i =0; i<findDuplicate.length; i++) {
+                elements.splice(duplicateIndex, 1)
+                if(findDuplicate.length === 1) {
+                    continue;
+                }
+            }
+           
         }
     }
 
